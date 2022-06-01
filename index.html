@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bola oito mágica</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Bola Oito Mágica</h1>
+    </header>
+    <main>
+        <div class="ball-box-container">
+            <div class="ball-box">
+                <div class="ball">
+                    <span id="ball-frase">8</span>
+                </div>
+            </div>
+        </div>
+        <div class="input-box-container">
+            <div class="input-box">
+                <h3>Faça perguntas sobre seu futuro</h3>
+                <h3 id="response"></h3>
+                <input type="text" onblur="questionValue()" id="question-user" placeholder="Digite sua pergunta aqui!">
+            </div>
+            <button id="send-button">Enviar</button>
+        </div>
+    </main>
 </body>
+<script src="./script.js"></script>
 </html>
